@@ -5,41 +5,41 @@
 class Kikplate < Formula
   desc "Command-line interface for the Kikplate plate registry"
   homepage "https://github.com/kikplate/kikplate"
-  version "0.12.0"
+  version "0.13.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kikplate/kikplate/releases/download/v0.12.0/kikplate-0.12.0-darwin-amd64.tar.gz"
-      sha256 "2b1ce46075df61027e43c92ed58fb438a53950a4b5de8e05ce0c795f2374c9e6"
+      url "https://github.com/kikplate/kikplate/releases/download/v0.13.0/kikplate-0.13.0-darwin-amd64.tar.gz"
+      sha256 "30db49e0ae2f89692a83bd2a1e13eed60e5159f3deb28aec4a81d8993828d9a3"
 
       define_method(:install) do
-        bin.install "kikplate-0.12.0-darwin-amd64"
+        bin.install "kikplate-0.13.0-darwin-amd64"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kikplate/kikplate/releases/download/v0.12.0/kikplate-0.12.0-darwin-arm64.tar.gz"
-      sha256 "aabb97b29f70461a126f24fa2a85821f45dc240f6b30a5fc0590c09d60b905c9"
+      url "https://github.com/kikplate/kikplate/releases/download/v0.13.0/kikplate-0.13.0-darwin-arm64.tar.gz"
+      sha256 "1942ed310e1a1968a2343cebd5d74dd5896f8057ea026b8c1fa6e380af6fa260"
 
       define_method(:install) do
-        bin.install "kikplate-0.12.0-darwin-arm64"
+        bin.install "kikplate-0.13.0-darwin-arm64"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kikplate/kikplate/releases/download/v0.12.0/kikplate-0.12.0-linux-amd64.tar.gz"
-      sha256 "872e5d64cc6508334d2cc68acd4a2d23b99fccf48b1c6719d991dac50b1b1211"
+      url "https://github.com/kikplate/kikplate/releases/download/v0.13.0/kikplate-0.13.0-linux-amd64.tar.gz"
+      sha256 "5ff3dc30f6bef20bbbecb551b75576acd2173796d9d1a221df49b8e1dc88f676"
       define_method(:install) do
-        bin.install "kikplate-0.12.0-linux-amd64"
+        bin.install "kikplate-0.13.0-linux-amd64"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kikplate/kikplate/releases/download/v0.12.0/kikplate-0.12.0-linux-arm64.tar.gz"
-      sha256 "67b11171f4e99b5145577baa66ebcb0248231e494d244dfb372d14f3b30eb30b"
+      url "https://github.com/kikplate/kikplate/releases/download/v0.13.0/kikplate-0.13.0-linux-arm64.tar.gz"
+      sha256 "09eab830b8e7975ecf4c98c159cde96fd749f46319355655da6b66e8bed5b182"
       define_method(:install) do
-        bin.install "kikplate-0.12.0-linux-arm64"
+        bin.install "kikplate-0.13.0-linux-arm64"
       end
     end
   end
